@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Quote, Star } from "lucide-react";
-import Image from "next/image";
 
 export default function Testimonials() {
   const testimonials = [
@@ -104,7 +103,7 @@ export default function Testimonials() {
 
                 {/* Testimonial Text */}
                 <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed italic">
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </p>
 
                 {/* Author */}

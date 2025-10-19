@@ -1,9 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Search, ArrowUpRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Hero() {

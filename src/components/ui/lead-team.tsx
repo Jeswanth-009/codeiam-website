@@ -72,7 +72,7 @@ export default function LeadTeam() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-gray-600 dark:text-gray-300 mb-10 text-sm md:text-base"
         >
-          Our leadership team drives Codeiam's mission — connecting innovation,
+          Our leadership team drives Codeiam&apos;s mission — connecting innovation,
           learning, and community across Andhra University.
         </motion.p>
 
