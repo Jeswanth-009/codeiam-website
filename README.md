@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Codeiam Club - Official Website
 
-## Getting Started
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Jeswanth-009/codeiam-website)
 
-First, run the development server:
+> Andhra University's Official Innovation Ecosystem - Empowering the next generation of technologists and entrepreneurs
+
+## 🌟 Features
+
+### ✨ Modern Tech Stack
+- **Next.js 15.5.6** with React 19
+- **TypeScript** for type safety
+- **Tailwind CSS 4** for styling
+- **Framer Motion** for animations
+- **Lucide React** for icons
+
+### 🎨 UI/UX Excellence
+- ✅ **Dark Mode** - Seamless theme switching with localStorage persistence
+- ✅ **Responsive Design** - Optimized for all devices (mobile, tablet, desktop)
+- ✅ **Smooth Animations** - Scroll-triggered animations using Framer Motion
+- ✅ **Interactive Components** - Hover effects, micro-interactions, ripple effects
+- ✅ **Loading States** - Professional skeleton screens
+- ✅ **Accessibility** - WCAG AA compliant, keyboard navigation, aria-labels
+
+### 🚀 Advanced Components
+- **Animated Hero Section** with gradient overlays
+- **Stats Counter** with CountUp animations
+- **Horizontal Scrolling Chapters** with navigation arrows
+- **Team Member Cards** with hover effects
+- **Testimonials Section** with ratings
+- **Enhanced CTA** with animated backgrounds
+- **Back to Top Button** - Appears after scrolling
+- **Scroll Progress Bar** - Visual reading indicator
+- **Reusable UI Kit** - Buttons, Badges, Skeletons
+
+### 📱 Mobile Features
+- Hamburger menu with smooth animations
+- Touch-friendly navigation
+- Optimized images and loading
+- Responsive grid systems
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 20+ 
+- npm, yarn, or pnpm
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone the repository
+git clone https://github.com/Jeswanth-009/codeiam-website.git
+
+# Navigate to project directory
+cd codeiam-website
+
+# Install dependencies
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Run the development server
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) to see the website.
 
-## Learn More
+### Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Create an optimized production build
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Start the production server
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+codeiam-website/
+├── public/              # Static assets
+├── src/
+│   ├── app/            # Next.js app directory
+│   ├── components/     # React components
+│   │   ├── sections/   # Page sections
+│   │   └── ui/         # Reusable UI components
+│   ├── contexts/       # React contexts (Theme)
+│   └── lib/            # Utility functions
+├── vercel.json         # Vercel deployment config
+└── package.json
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Import project in [Vercel](https://vercel.com)
+3. Deploy with one click!
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Jeswanth-009/codeiam-website)
+
+## 📖 Documentation
+
+- **[IMPROVEMENTS.md](./IMPROVEMENTS.md)** - Dark mode, animations, mobile responsiveness
+- **[UI_ENHANCEMENTS.md](./UI_ENHANCEMENTS.md)** - Advanced UI components and features
+
+## 📧 Contact
+
+- Email: contact@codeiam.club
+- Website: [codeiam.club](https://codeiam.club)
+
+## 🌟 Star Us!
+
+If you like this project, please give it a ⭐ on GitHub!
+
+---
+
+**Built with ❤️ by the Codeiam Club Team**
