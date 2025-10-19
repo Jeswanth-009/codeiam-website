@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -115,7 +114,7 @@ export default function EcosystemPage() {
             Be Part of the <span className="text-blue-600">Ecosystem</span>
           </h2>
           <p className="text-gray-600 mb-6 max-w-xl mx-auto">
-            Whether you're a developer, designer, or entrepreneur — there’s a
+            Whether you&apos;re a developer, designer, or entrepreneur — there&apos;s a
             place for you in Codeiam. Join one of our chapters or initiatives
             and start building your future today.
           </p>

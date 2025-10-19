@@ -1,5 +1,7 @@
 "use client";
 
+
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const timeline = [
@@ -176,18 +178,18 @@ export default function AboutPage() {
             own.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <a
+            <Link
               href="/join"
               className="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition"
             >
               Become a Member
-            </a>
-            <a
+            </Link>
+            <Link
               href="/chapters"
               className="bg-white border px-8 py-3 rounded-full hover:bg-gray-100 transition"
             >
               Propose a Chapter
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -204,12 +205,12 @@ export default function JoinPage() {
           <p className="text-gray-600 mb-6 max-w-xl mx-auto">
             Take your first step toward becoming a leader in technology and innovation.
           </p>
-          <a
+          <Link
             href="/chapters"
             className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition"
           >
             Explore Chapters
-          </a>
+          </Link>
         </div>
       </div>
     </section>
