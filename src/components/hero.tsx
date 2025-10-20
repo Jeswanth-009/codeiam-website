@@ -10,7 +10,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="rounded-3xl overflow-hidden bg-white dark:bg-gray-800 shadow-md transition-colors duration-300"
+        className="rounded-3xl overflow-hidden bg-white shadow-md"
       >
         {/* Hero Image */}
         <div className="relative h-[60vh] md:h-[80vh] w-full">

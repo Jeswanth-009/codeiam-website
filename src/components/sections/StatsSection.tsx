@@ -38,7 +38,7 @@ export default function StatsSection() {
   };
 
   return (
-    <section className="py-12 md:py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section className="py-12 md:py-20 bg-white">
       <motion.div
         ref={ref}
         variants={containerVariants}
@@ -51,12 +51,12 @@ export default function StatsSection() {
             key={stat.label}
             variants={itemVariants}
             whileHover={{ scale: 1.05, y: -5 }}
-            className="p-4 md:p-6 rounded-2xl bg-gray-50 dark:bg-gray-800 shadow-sm hover:shadow-md transition-shadow"
+            className="p-4 md:p-6 rounded-2xl bg-gray-50 shadow-sm hover:shadow-md transition-shadow"
           >
-            <p className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400">
+            <p className="text-3xl md:text-4xl font-bold text-blue-600">
               {isInView && <CountUp end={stat.value} duration={2.5} />}+
             </p>
-            <p className="text-gray-600 dark:text-gray-300 mt-2 text-sm md:text-base">{stat.label}</p>
+            <p className="text-gray-600 mt-2 text-sm md:text-base">{stat.label}</p>
           </motion.div>
         ))}
       </motion.div>

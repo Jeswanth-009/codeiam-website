@@ -88,7 +88,7 @@ export default function Chapters() {
   };
 
   return (
-    <section className="py-12 md:py-20 bg-gray-50 dark:bg-gray-800 rounded-3xl relative transition-colors duration-300">
+    <section className="py-12 md:py-20 bg-gray-50 rounded-3xl relative">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         {/* Section Header */}
         <motion.div
@@ -98,15 +98,15 @@ export default function Chapters() {
           transition={{ duration: 0.6 }}
           className="flex justify-between items-center mb-8 flex-wrap gap-3"
         >
-          <h2 className="text-2xl md:text-3xl font-bold dark:text-white">
-            <span className="text-gray-400 dark:text-gray-500 text-base md:text-lg mr-3">Chapters</span>
+          <h2 className="text-2xl md:text-3xl font-bold">
+            <span className="text-gray-400 text-base md:text-lg mr-3">Chapters</span>
             Explore Our Chapters
           </h2>
           <Link href="/chapters">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-black dark:bg-white text-white dark:text-black px-5 py-2 rounded-full hover:shadow-lg transition text-sm md:text-base"
+              className="bg-black text-white px-5 py-2 rounded-full hover:shadow-lg transition text-sm md:text-base"
             >
               View All →
             </motion.button>
@@ -118,10 +118,10 @@ export default function Chapters() {
           {/* Left Arrow */}
           <button
             onClick={() => scroll("left")}
-            className="absolute left-[-1.5rem] top-1/2 -translate-y-1/2 bg-white dark:bg-gray-700 shadow-md p-3 rounded-full z-10 hover:scale-110 transition opacity-0 group-hover:opacity-100 hidden md:block"
+            className="absolute left-[-1.5rem] top-1/2 -translate-y-1/2 bg-white shadow-md p-3 rounded-full z-10 hover:scale-110 transition opacity-0 group-hover:opacity-100 hidden md:block"
             aria-label="Scroll left"
           >
-            <ChevronLeft className="w-5 h-5 dark:text-white" />
+            <ChevronLeft className="w-5 h-5" />
           </button>
 
           <div
@@ -138,7 +138,7 @@ export default function Chapters() {
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.05, y: -5 }}
                     transition={{ duration: 0.3 }}
-                    className="relative w-[250px] md:w-[280px] h-[300px] md:h-[350px] bg-white dark:bg-gray-700 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition cursor-pointer flex-shrink-0"
+                    className="relative w-[250px] md:w-[280px] h-[300px] md:h-[350px] bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition cursor-pointer flex-shrink-0"
                   >
                     <Image
                       src={chapter.img}
@@ -165,10 +165,10 @@ export default function Chapters() {
           {/* Right Arrow */}
           <button
             onClick={() => scroll("right")}
-            className="absolute right-[-1.5rem] top-1/2 -translate-y-1/2 bg-white dark:bg-gray-700 shadow-md p-3 rounded-full z-10 hover:scale-110 transition opacity-0 group-hover:opacity-100 hidden md:block"
+            className="absolute right-[-1.5rem] top-1/2 -translate-y-1/2 bg-white shadow-md p-3 rounded-full z-10 hover:scale-110 transition opacity-0 group-hover:opacity-100 hidden md:block"
             aria-label="Scroll right"
           >
-            <ChevronRight className="w-5 h-5 dark:text-white" />
+            <ChevronRight className="w-5 h-5" />
           </button>
         </div>
 
@@ -177,7 +177,7 @@ export default function Chapters() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="text-center text-gray-500 dark:text-gray-400 mt-8 text-xs md:text-sm"
+          className="text-center text-gray-500 mt-8 text-xs md:text-sm"
         >
           Join a chapter to learn, build, and lead in your domain of interest.
         </motion.p>

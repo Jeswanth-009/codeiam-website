@@ -40,14 +40,14 @@ export default function WhatWeDo() {
   };
 
   return (
-    <section className="py-12 md:py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
+    <section className="py-12 md:py-20 bg-gray-50">
       {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="text-3xl md:text-4xl font-bold text-center mb-10 dark:text-white"
+        className="text-3xl md:text-4xl font-bold text-center mb-10"
       >
         What We Do
       </motion.h2>
@@ -66,16 +66,16 @@ export default function WhatWeDo() {
             variants={cardVariants}
             whileHover={{ scale: 1.03, y: -8 }}
             transition={{ duration: 0.3 }}
-            className="rounded-3xl overflow-hidden bg-white dark:bg-gray-700 shadow-md hover:shadow-xl transition-all text-center p-8"
+            className="rounded-3xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all text-center p-8"
           >
             {/* Icon */}
             <div>{card.icon}</div>
 
             {/* Text */}
-            <h3 className="text-lg md:text-xl font-semibold mb-2 dark:text-white">
+            <h3 className="text-lg md:text-xl font-semibold mb-2">
               {card.title}
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base">
+            <p className="text-gray-600 text-sm md:text-base">
               {card.desc}
             </p>
           </motion.div>

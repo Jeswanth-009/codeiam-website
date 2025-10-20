@@ -51,7 +51,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="py-12 md:py-20 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 overflow-hidden transition-colors duration-300">
+    <section className="py-12 md:py-20 bg-gradient-to-br from-gray-50 to-gray-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         {/* Section Header */}
         <motion.div
@@ -61,10 +61,10 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
             What Our Members Say
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto">
             Hear from students who transformed their careers through Codeiam
           </p>
         </motion.div>
@@ -82,10 +82,10 @@ export default function Testimonials() {
               key={index}
               variants={cardVariants}
               whileHover={{ y: -10, scale: 1.02 }}
-              className="relative bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all"
+              className="relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all"
             >
               {/* Quote Icon */}
-              <div className="absolute top-6 right-6 text-blue-100 dark:text-blue-900/30">
+              <div className="absolute top-6 right-6 text-blue-100">
                 <Quote className="w-12 h-12" />
               </div>
 
@@ -102,7 +102,7 @@ export default function Testimonials() {
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed italic">
+                <p className="text-gray-600 mb-6 leading-relaxed italic">
                   &ldquo;{testimonial.content}&rdquo;
                 </p>
 
@@ -112,10 +112,10 @@ export default function Testimonials() {
                     {testimonial.name.charAt(0)}
                   </div>
                   <div>
-                    <h4 className="font-semibold dark:text-white">
+                    <h4 className="font-semibold">
                       {testimonial.name}
                     </h4>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                    <p className="text-sm text-gray-500">
                       {testimonial.role}
                     </p>
                   </div>

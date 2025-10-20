@@ -25,13 +25,13 @@ export default function MissionVision() {
   };
 
   return (
-    <section className="py-12 md:py-20 bg-white dark:bg-gray-900 text-center transition-colors duration-300">
+    <section className="py-12 md:py-20 bg-white text-center">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="text-3xl md:text-4xl font-bold mb-10 dark:text-white"
+        className="text-3xl md:text-4xl font-bold mb-10"
       >
         Our Mission & Vision
       </motion.h2>
@@ -46,10 +46,10 @@ export default function MissionVision() {
           variants={itemVariants}
           whileHover={{ scale: 1.02, y: -5 }}
           transition={{ duration: 0.3 }}
-          className="p-6 md:p-8 rounded-3xl shadow-md bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
+          className="p-6 md:p-8 rounded-3xl shadow-md bg-gray-50"
         >
-          <h3 className="text-xl font-semibold mb-4 dark:text-white">Our Mission</h3>
-          <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm md:text-base">
+          <h3 className="text-xl font-semibold mb-4">Our Mission</h3>
+          <p className="text-gray-600 leading-relaxed text-sm md:text-base">
             To foster a collaborative ecosystem for technology enthusiasts to innovate,
             build practical skills, and transform ideas into impactful ventures through
             hands-on learning, expert mentorship, and a vibrant community.
@@ -59,10 +59,10 @@ export default function MissionVision() {
           variants={itemVariants}
           whileHover={{ scale: 1.02, y: -5 }}
           transition={{ duration: 0.3 }}
-          className="p-6 md:p-8 rounded-3xl shadow-md bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
+          className="p-6 md:p-8 rounded-3xl shadow-md bg-gray-50"
         >
-          <h3 className="text-xl font-semibold mb-4 dark:text-white">Our Vision</h3>
-          <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm md:text-base">
+          <h3 className="text-xl font-semibold mb-4">Our Vision</h3>
+          <p className="text-gray-600 leading-relaxed text-sm md:text-base">
             To be the premier student-led incubator for technologists, entrepreneurs, and
             industry leaders, recognized for bridging the gap between academic knowledge
             and real-world impact.
