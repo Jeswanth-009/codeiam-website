@@ -229,8 +229,13 @@ const chapterData = {
   },
 };
 
-export default function ChapterDetails({ params }: { params: { slug: string } }) {
-  const chapter = chapterData[params.slug as keyof typeof chapterData];
+export default async function ChapterDetails({ 
+  params 
+}: { 
+  params: Promise<{ slug: string }> 
+}) {
+  const { slug } = await params;
+  const chapter = chapterData[slug as keyof typeof chapterData];
   if (!chapter) return notFound();
 
   return (
