@@ -54,14 +54,14 @@ export default function LeadTeam() {
   };
 
   return (
-    <section className="bg-gray-50 dark:bg-gray-800 py-12 md:py-24 transition-colors duration-300">
+    <section className="bg-gray-50 py-12 md:py-24">
       <div className="max-w-6xl mx-auto px-4 md:px-6 text-center">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold mb-4 dark:text-white"
+          className="text-3xl md:text-4xl font-bold mb-4"
         >
           Meet the Lead Team
         </motion.h2>
@@ -70,7 +70,7 @@ export default function LeadTeam() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-gray-600 dark:text-gray-300 mb-10 text-sm md:text-base"
+          className="text-gray-600 mb-10 text-sm md:text-base"
         >
           Our leadership team drives Codeiam&apos;s mission — connecting innovation,
           learning, and community across Andhra University.
@@ -89,7 +89,7 @@ export default function LeadTeam() {
               variants={itemVariants}
               whileHover={{ scale: 1.05, y: -8 }}
               transition={{ duration: 0.3 }}
-              className="relative bg-white dark:bg-gray-700 rounded-3xl shadow-sm hover:shadow-lg overflow-hidden group"
+              className="relative bg-white rounded-3xl shadow-sm hover:shadow-lg overflow-hidden group"
             >
               <Image
                 src={member.image}

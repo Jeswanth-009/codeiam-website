@@ -4,8 +4,6 @@ import "./globals.css";
 import Footer from "@/components/ui/footer";
 import Navbar from "@/components/ui/navbar";
 import BackToTop from "@/components/ui/BackToTop";
-import ScrollProgress from "@/components/ui/ScrollProgress";
-import { ThemeProvider } from "@/contexts/ThemeContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,25 +41,20 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/codeiam-logo.jpg" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50 transition-colors duration-300`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 text-gray-900`}
       >
-        <ThemeProvider>
-          {/* Scroll Progress Indicator */}
-          <ScrollProgress />
-          
-          {/* Fixed Navbar */}
-          <Navbar />
+        {/* Fixed Navbar */}
+        <Navbar />
 
-          {/* 👇 Added top padding so content doesn't overlap */}
-          <main className="pt-10 min-h-screen">
-            {children}
-          </main>
+        {/* 👇 Added top padding so content doesn't overlap */}
+        <main className="pt-10 min-h-screen">
+          {children}
+        </main>
 
-          <Footer />
-          
-          {/* Back to Top Button */}
-          <BackToTop />
-        </ThemeProvider>
+        <Footer />
+        
+        {/* Back to Top Button */}
+        <BackToTop />
       </body>
     </html>
   );

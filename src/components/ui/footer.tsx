@@ -27,7 +27,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-24 transition-colors duration-300">
+    <footer className="bg-gray-50 border-t border-gray-200 mt-24">
       <motion.div
         variants={footerVariants}
         initial="hidden"
@@ -47,57 +47,57 @@ export default function Footer() {
               className="mr-3"
             />
           </div>
-          <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          <p className="text-gray-600 text-sm leading-relaxed">
             Fostering a community of innovators building the future of technology.
           </p>
         </motion.div>
 
         {/* Column 2: Quick Links */}
         <motion.div variants={itemVariants}>
-          <h3 className="text-lg font-semibold mb-3 text-gray-800 dark:text-white">Quick Links</h3>
-          <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-            <li><Link href="/about" className="hover:text-blue-600 dark:hover:text-blue-400 transition">About Us</Link></li>
-            <li><Link href="/events" className="hover:text-blue-600 dark:hover:text-blue-400 transition">Events</Link></li>
-            <li><Link href="/chapters" className="hover:text-blue-600 dark:hover:text-blue-400 transition">Chapters</Link></li>
-            <li><Link href="/projects" className="hover:text-blue-600 dark:hover:text-blue-400 transition">Projects</Link></li>
-            <li><Link href="/join" className="hover:text-blue-600 dark:hover:text-blue-400 transition">Join Us</Link></li>
+          <h3 className="text-lg font-semibold mb-3 text-gray-800">Quick Links</h3>
+          <ul className="space-y-2 text-sm text-gray-600">
+            <li><Link href="/about" className="hover:text-blue-600 transition">About Us</Link></li>
+            <li><Link href="/events" className="hover:text-blue-600 transition">Events</Link></li>
+            <li><Link href="/chapters" className="hover:text-blue-600 transition">Chapters</Link></li>
+            <li><Link href="/projects" className="hover:text-blue-600 transition">Projects</Link></li>
+            <li><Link href="/join" className="hover:text-blue-600 transition">Join Us</Link></li>
           </ul>
         </motion.div>
 
         {/* Column 3: Initiatives */}
         <motion.div variants={itemVariants}>
-          <h3 className="text-lg font-semibold mb-3 text-gray-800 dark:text-white">Initiatives</h3>
-          <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-            <li><Link href="/pre-incubation" className="hover:text-blue-600 dark:hover:text-blue-400 transition">Pre-Incubation</Link></li>
-            <li><Link href="/hackathons" className="hover:text-blue-600 dark:hover:text-blue-400 transition">Hackathons</Link></li>
-            <li><Link href="/research" className="hover:text-blue-600 dark:hover:text-blue-400 transition">Research Group</Link></li>
-            <li><Link href="/chapters/propose" className="hover:text-blue-600 dark:hover:text-blue-400 transition">Propose a Chapter</Link></li>
+          <h3 className="text-lg font-semibold mb-3 text-gray-800">Initiatives</h3>
+          <ul className="space-y-2 text-sm text-gray-600">
+            <li><Link href="/pre-incubation" className="hover:text-blue-600 transition">Pre-Incubation</Link></li>
+            <li><Link href="/hackathons" className="hover:text-blue-600 transition">Hackathons</Link></li>
+            <li><Link href="/research" className="hover:text-blue-600 transition">Research Group</Link></li>
+            <li><Link href="/chapters/propose" className="hover:text-blue-600 transition">Propose a Chapter</Link></li>
           </ul>
         </motion.div>
 
         {/* Column 4: Connect */}
         <motion.div variants={itemVariants}>
-          <h3 className="text-lg font-semibold mb-3 text-gray-800 dark:text-white">Connect</h3>
-          <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">contact@codeiam.club</p>
-          <div className="flex space-x-4 text-gray-700 dark:text-gray-300">
+          <h3 className="text-lg font-semibold mb-3 text-gray-800">Connect</h3>
+          <p className="text-sm text-gray-600 mb-3">contact@codeiam.club</p>
+          <div className="flex space-x-4 text-gray-700">
             <motion.div whileHover={{ scale: 1.2, y: -2 }} whileTap={{ scale: 0.9 }}>
-              <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600 dark:hover:text-pink-400 text-xl transition"><FaInstagram /></Link>
+              <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600 text-xl transition"><FaInstagram /></Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.2, y: -2 }} whileTap={{ scale: 0.9 }}>
-              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700 dark:hover:text-blue-400 text-xl transition"><FaLinkedin /></Link>
+              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700 text-xl transition"><FaLinkedin /></Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.2, y: -2 }} whileTap={{ scale: 0.9 }}>
-              <Link href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white text-xl transition"><FaGithub /></Link>
+              <Link href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 text-xl transition"><FaGithub /></Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.2, y: -2 }} whileTap={{ scale: 0.9 }}>
-              <Link href="https://x.com" target="_blank" rel="noopener noreferrer" className="hover:text-black dark:hover:text-white text-xl transition"><FaXTwitter /></Link>
+              <Link href="https://x.com" target="_blank" rel="noopener noreferrer" className="hover:text-black text-xl transition"><FaXTwitter /></Link>
             </motion.div>
           </div>
         </motion.div>
       </motion.div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-200 dark:border-gray-700 py-5 text-center text-sm text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-900 transition-colors duration-300">
+      <div className="border-t border-gray-200 py-5 text-center text-sm text-gray-600 bg-white">
         © {new Date().getFullYear()} Codeiam Club. All Rights Reserved.
       </div>
     </footer>
