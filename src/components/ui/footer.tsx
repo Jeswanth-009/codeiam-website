@@ -78,20 +78,20 @@ export default function Footer() {
         {/* Column 4: Connect */}
         <motion.div variants={itemVariants}>
           <h3 className="text-lg font-semibold mb-3 text-gray-800">Connect</h3>
-          <p className="text-sm text-gray-600 mb-3">contact@codeiam.club</p>
+          <p className="text-sm text-gray-600 mb-3">codeiam.club.andhrauniversity@gmail.com</p>
           <div className="flex space-x-4 text-gray-700">
             <motion.div whileHover={{ scale: 1.2, y: -2 }} whileTap={{ scale: 0.9 }}>
-              <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600 text-xl transition"><FaInstagram /></Link>
+              <Link href="https://www.instagram.com/codeiam.club?igsh=M3I5ZXphajhsbmlp" target="_blank" rel="noopener noreferrer" className="hover:text-pink-600 text-xl transition"><FaInstagram /></Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.2, y: -2 }} whileTap={{ scale: 0.9 }}>
-              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700 text-xl transition"><FaLinkedin /></Link>
+              <Link href="https://www.linkedin.com/company/codeiam-club/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-700 text-xl transition"><FaLinkedin /></Link>
             </motion.div>
-            <motion.div whileHover={{ scale: 1.2, y: -2 }} whileTap={{ scale: 0.9 }}>
+            {/*<motion.div whileHover={{ scale: 1.2, y: -2 }} whileTap={{ scale: 0.9 }}>
               <Link href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 text-xl transition"><FaGithub /></Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.2, y: -2 }} whileTap={{ scale: 0.9 }}>
               <Link href="https://x.com" target="_blank" rel="noopener noreferrer" className="hover:text-black text-xl transition"><FaXTwitter /></Link>
-            </motion.div>
+            </motion.div>*/}
           </div>
         </motion.div>
       </motion.div>
