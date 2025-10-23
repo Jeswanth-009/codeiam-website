@@ -12,7 +12,7 @@ const leads = [
   {
     name: "Leena Keerthi",
     role: "Senior Vice President",
-    image: "/team/leena.jpeg",
+    image: "/team/leena.jpg",
   },
   {
     name: "Dandu S.N. Venkata Pavan Raghavendra Varma",
@@ -21,7 +21,7 @@ const leads = [
   },
   {
     name: "Sreepriya Pilla",
-    role: "Vice President",
+    role: "R&D Head",
     image: "/team/sreepriya.jpeg",
   },
   {
