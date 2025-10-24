@@ -15,7 +15,6 @@ export default function Navbar() {
     { name: "Our Ecosystem", path: "/ecosystem" },
     { name: "About Us", path: "/about" },
     { name: "Events", path: "/events" },
-    { name: "Blog", path: "/blog" },
   ];
 
   return (
